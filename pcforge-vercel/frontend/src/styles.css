@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+:root{
+  --bg:#0A0F1C;
+  --panel:#0F223A;
+  --accent:#00AEEF;
+  --accent-2:#007BFF;
+  --muted:#94A3B8;
+  --text:#E0F7FF;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+.container{max-width:1200px;margin:0 auto;padding:24px}
+.card{background:var(--panel);border:1px solid rgba(0,0,0,0.3);border-radius:12px;padding:16px}
+.button{background:var(--accent);color:#001; padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
+.small{font-size:13px;color:var(--muted)}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.progress{color:var(--muted);font-size:13px}
+.step-card{transition:all .35s ease;opacity:0;transform:translateY(8px)}
+.step-card.show{opacity:1;transform:translateY(0)}
+.popup{position:fixed;right:20px;bottom:20px;background:linear-gradient(90deg,var(--panel), #0b2740);padding:12px;border-radius:10px;border:1px solid rgba(0,0,0,0.4);box-shadow:0 8px 24px rgba(2,6,23,0.6)}
